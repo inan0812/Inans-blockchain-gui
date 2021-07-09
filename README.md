@@ -1,5 +1,6 @@
-# chia-blockchain
-![Alt text](https://www.chia.net/img/chia_logo.svg)
+# Inans-blockchain
+
+THIS IS IN EARLY TESTING. 
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Chia-Network/chia-blockchain?logo=GitHub)
 
