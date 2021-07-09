@@ -98,7 +98,7 @@ export default function FarmFullNodeConnections() {
           {'The full node that your farmer is connected to is below. '}
           <Link
             target="_blank"
-            href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
+            href="https://github.com/Chia-Network/Inans-blockchain/wiki/Network-Architecture"
           >
             Learn more
           </Link>
