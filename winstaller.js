@@ -15,15 +15,15 @@ function getInstallerConfig () {
 
   return Promise.resolve({
     appDirectory: path.join(rootPath, 'Inan-win32-x64'),
-    authors: 'Inan Network',
+    authors: 'Chia Network',
     version: process.env.INAN_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/inan0812/Inans-blockchain/master/electron-react/src/assets/img/Inan.ico',
+    iconUrl: 'https://raw.githubusercontent.com/inan0812/Inans-blockchain/master/electron-react/src/assets/img/chia.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: 'Inan.exe',
-    setupExe: 'InanSetup-' + process.env.INAN_INSTALLER_VERSION + '.exe',
-    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'Inan.ico')
+    exe: 'Chia.exe',
+    setupExe: 'ChiaSetup-' + process.env.INAN_INSTALLER_VERSION + '.exe',
+    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chia.ico')
   })
 }
