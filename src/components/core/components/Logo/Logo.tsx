@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, BoxProps } from '@material-ui/core';
-import { Chia } from '@chia/icons';
+import { Inan } from '@Inan/icons';
 
-const StyledChia = styled(Chia)`
+const StyledInan = styled(Inan)`
   max-width: 100%;
   width: auto;
   height: auto;
@@ -12,7 +12,7 @@ const StyledChia = styled(Chia)`
 export default function Logo(props: BoxProps) {
   return (
     <Box {...props}>
-      <StyledChia />
+      <StyledInan />
     </Box>
   );
 }

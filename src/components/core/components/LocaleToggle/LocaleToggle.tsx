@@ -43,7 +43,7 @@ export default function LocaleToggle(props: Props) {
     handleClose();
 
     openExternal(
-      'https://github.com/Chia-Network/Inans-blockchain-gui/tree/main/src/locales/README.md',
+      'https://github.com/inan0812/Inans-blockchain-gui/tree/main/src/locales/README.md',
     );
   }
 

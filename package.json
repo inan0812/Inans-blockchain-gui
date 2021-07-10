@@ -1,8 +1,8 @@
 {
   "name": "Inans-blockchain",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
-  "description": "GUI for Chia Blockchain",
-  "productName": "Chia Blockchain",
+  "author": "Inan Network <hello@Inan.net> (https://Inan.net/)",
+  "description": "GUI for Inan Blockchain",
+  "productName": "Inan Blockchain",
   "private": true,
   "homepage": "./",
   "main": "build/electron/main.js",
