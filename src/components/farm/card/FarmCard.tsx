@@ -1,6 +1,6 @@
 import React, { ReactNode, ReactElement } from 'react';
 import styled from 'styled-components';
-import { Flex, TooltipIcon } from '@Inan/core';
+import { Flex, TooltipIcon } from '@inan/core';
 import {
   Box,
   Card,

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import icon from '../../assets/img/Inan_circle.svg';
+import icon from '../../assets/img/inan_circle.svg';
 
 const GlobalStyle = createGlobalStyle`
   body,
@@ -114,7 +114,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 Inan Network</div>
+        <div className="copyright">Copyright (c) 2021 Chia Network, inan Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (

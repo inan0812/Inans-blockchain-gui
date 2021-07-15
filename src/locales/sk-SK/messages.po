@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(voliteľné)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore Inan’s blocks further? Check out <0>Inan Explorer</0> built by an open source developer."
-msgstr "* Chcete viac preskúmať Inan bloky? Vyskúšajte aplikáciu <0>Inan Explorer</0> vytvorenú open source vývojárom."
+msgid "*Want to explore inan’s blocks further? Check out <0>inan Explorer</0> built by an open source developer."
+msgstr "* Chcete viac preskúmať inan bloky? Vyskúšajte aplikáciu <0>inan Explorer</0> vytvorenú open source vývojárom."
 
 #: src/components/plot/add/PlotAddNFT.tsx:125
 msgid "+ Add New Plot NFT"
@@ -44,8 +44,8 @@ msgstr "Kombajn je služba bežiaca na stroji, kde sú uložené polia. Farmár 
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About Inan Blockchain"
-msgstr "O Inan blockchaine"
+msgid "About inan Blockchain"
+msgstr "O inan blockchaine"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -216,8 +216,8 @@ msgid "Block VDF Iterations"
 msgstr "Blok VDF iterácii"
 
 #: src/components/block/Block.jsx:336
-msgid "Block at height {0} in the Inan blockchain"
-msgstr "Blok s výškou {0} v Inan blockchaine"
+msgid "Block at height {0} in the inan blockchain"
+msgstr "Blok s výškou {0} v inan blockchaine"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -309,16 +309,16 @@ msgid "Chat on KeyBase"
 msgstr "Chatovať na KeyBase"
 
 #: src/electron/main.tsx:419
-msgid "Inan"
-msgstr "Inan"
+msgid "inan"
+msgstr "inan"
 
 #: src/electron/main.tsx:358
-msgid "Inan Blockchain Wiki"
-msgstr "Inan Blockchain Wiki"
+msgid "inan Blockchain Wiki"
+msgstr "inan Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
-msgid "Inan Wallet"
-msgstr "Inan peňaženka"
+msgid "inan Wallet"
+msgstr "inan peňaženka"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -686,8 +686,8 @@ msgid "Edit"
 msgstr "Upraviť"
 
 #: src/components/wallet/WalletImport.tsx:147
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Inan wallet."
-msgstr "Zadajte 24 slov, ktoré ste si uložili pre účely obnovenia vašej peňaženky Inan."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your inan wallet."
+msgstr "Zadajte 24 slov, ktoré ste si uložili pre účely obnovenia vašej peňaženky inan."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -700,8 +700,8 @@ msgid "Error"
 msgstr "Chyba"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
-msgid "Error: Cannot send Inan to coloured address. Please enter a Inan address."
-msgstr "Chyba: Inan nie je možné odoslať na farebnú adresu. Zadajte prosím Inan adresu."
+msgid "Error: Cannot send inan to coloured address. Please enter a inan address."
+msgstr "Chyba: inan nie je možné odoslať na farebnú adresu. Zadajte prosím inan adresu."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1476,8 +1476,8 @@ msgid "Plots Passed Filter"
 msgstr "Polia, ktoré prešli filtrom"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
-msgid "Plots are allocated space on your hard drive used to farm and earn Inan. <0>Learn more</0>"
-msgstr "Polia sú pridelené priestory na vašom pevnom disku používanom na ťažbu a zarábanie Inan. <0>Ďalšie informácie</0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn inan. <0>Learn more</0>"
+msgstr "Polia sú pridelené priestory na vašom pevnom disku používanom na ťažbu a zarábanie inan. <0>Ďalšie informácie</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1914,8 +1914,8 @@ msgstr "Dĺžka disponibilného intervalu (počet blokov)"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
-msgid "Spending Limit (Inan per interval): {0}"
-msgstr "Limit výdavkov (Inan na interval): {0}"
+msgid "Spending Limit (inan per interval): {0}"
+msgstr "Limit výdavkov (inan na interval): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -1963,8 +1963,8 @@ msgstr "Stav:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the Inan blockchain"
-#~ msgstr "Sub Block at height {0} in the Inan blockchain"
+#~ msgid "Sub Block at height {0} in the inan blockchain"
+#~ msgstr "Sub Block at height {0} in the inan blockchain"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:347
 msgid "Submit"
@@ -2107,8 +2107,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Táto možnosť je dostupná iba z Electron aplikácie."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of Inan that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Inan that you have just spent but is not yet in the blockchain."
-msgstr "Toto je množstvo Inan, ktoré môžete v súčasnosti použiť na uskutočnenie transakcií. Nezahŕňa nespracované odmeny za ťažbu, nespracované prichádzajúce transakcie a Inan, ktorú ste práve minuli, ale ešte nie je v blockchaine."
+msgid "This is the amount of inan that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and inan that you have just spent but is not yet in the blockchain."
+msgstr "Toto je množstvo inan, ktoré môžete v súčasnosti použiť na uskutočnenie transakcií. Nezahŕňa nespracované odmeny za ťažbu, nespracované prichádzajúce transakcie a inan, ktorú ste práve minuli, ale ešte nie je v blockchaine."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2127,8 +2127,8 @@ msgid "This is the time the block was created by the farmer, which is before it 
 msgstr "Toto je čas, kedy ťažiar vytvoril blok, a to ešte predtým, ako bol finalizovaný s dôkazom o čase"
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
-msgid "This is the total amount of Inan in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "Toto je celkové množstvo Inan v blockchaine v aktuálne najnovšom čiastkovom bloku, ktorý je kontrolovaný vašimi súkromnými kľúčmi. Zahŕňa zmrazené odmeny za ťaženie, ale nie nespracované prichádzajúce a odchádzajúce transakcie."
+msgid "This is the total amount of inan in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgstr "Toto je celkové množstvo inan v blockchaine v aktuálne najnovšom čiastkovom bloku, ktorý je kontrolovaný vašimi súkromnými kľúčmi. Zahŕňa zmrazené odmeny za ťaženie, ale nie nespracované prichádzajúce a odchádzajúce transakcie."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2173,7 +2173,7 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "Tento obchod bol zahrnutý v blockchaine na tejto pozícii"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of Inan is no longer compatible with the blockchain and can not safely farm."
+msgid "This version of inan is no longer compatible with the blockchain and can not safely farm."
 msgstr "Táto verzia Chii nie je kompatibilná s blockchainom a farmenie na nej nie je bezpečné."
 
 #: src/components/fullNode/FullNode.jsx:92
@@ -2198,8 +2198,8 @@ msgstr "Príjemca"
 msgid "Total Balance"
 msgstr "Celkový zostatok"
 
-#: src/components/farm/card/FarmCardTotalInanFarmed.tsx:15
-#~ msgid "Total Inan Farmed"
+#: src/components/farm/card/FarmCardTotalinanFarmed.tsx:15
+#~ msgid "Total inan Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2371,7 +2371,7 @@ msgstr "Stav peňaženky:"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.InanWallet"
+#~ msgid "WalletItem.inanWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -2408,8 +2408,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr "Chcete sa pripojiť k združeniu? Vytvorte NFT poľa"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-msgid "Want to earn more Inan? Add more plots to your farm."
-msgstr "Chcete zarobiť viac Inan? Pridajte na svoju farmu ďalšie polia."
+msgid "Want to earn more inan? Add more plots to your farm."
+msgstr "Chcete zarobiť viac inan? Pridajte na svoju farmu ďalšie polia."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2424,8 +2424,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Váha je celková pridaná obtiažnosť všetkých blokov až po tento blok vrátane tohto bloku"
 
 #: src/components/selectKey/SelectKey.tsx:112
-msgid "Welcome to Inan. Please log in with an existing key, or create a new key."
-msgstr "Vitajte v Inan. Prosím prihláste sa s existujúcim kľúčom, alebo si vytvorte nový."
+msgid "Welcome to inan. Please log in with an existing key, or create a new key."
+msgstr "Vitajte v inan. Prosím prihláste sa s existujúcim kľúčom, alebo si vytvorte nový."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2495,8 +2495,8 @@ msgid "You need to claim your rewards first"
 msgstr "Najprv musíte získať svoje odmeny"
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Inan application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Inan application as this version will stop working soon!"
+#~ msgid "You need to upgrade the inan application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the inan application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2583,8 +2583,8 @@ msgstr "{0} bodov pred {1} - {2} hodinami"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Odmena Za Blok"
 
-#: src/components/farm/card/FarmCardTotalInanFarmed.tsx:29
-msgid "{currencyCode} Total Inan Farmed"
+#: src/components/farm/card/FarmCardTotalinanFarmed.tsx:29
+msgid "{currencyCode} Total inan Farmed"
 msgstr "{currencyCode} Celkové množstvo vyfarmárčenej Chii"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28

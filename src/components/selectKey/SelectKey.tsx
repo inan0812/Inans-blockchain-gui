@@ -2,7 +2,7 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useSelector, useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { Button, ConfirmDialog, Flex, Logo } from '@Inan/core';
+import { Button, ConfirmDialog, Flex, Logo } from '@inan/core';
 import {
   Card,
   Typography,
@@ -110,7 +110,7 @@ export default function SelectKey() {
               </Typography>
               <Typography variant="subtitle1">
                 <Trans>
-                  Welcome to Inan. Please log in with an existing key, or create
+                  Welcome to inan. Please log in with an existing key, or create
                   a new key.
                 </Trans>
               </Typography>

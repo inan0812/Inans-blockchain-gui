@@ -12,7 +12,7 @@ const convert = (amount, from, to) => {
   return Number.parseFloat(amountInFromUnit.div(units.getUnit(to)));
 };
 
-class Inan {
+class inan {
   constructor(value, unit) {
     this._value = value;
     this._unit = unit;
@@ -73,42 +73,42 @@ class Inan {
   }
 }
 
-export const Inan_formatter = (value, unit) => new Inan(value, unit);
+export const inan_formatter = (value, unit) => new inan(value, unit);
 
-Inan_formatter.convert = convert;
-Inan_formatter.setDisplay = units.setDisplay;
-Inan_formatter.setUnit = units.setUnit;
-Inan_formatter.getUnit = units.getUnit;
-Inan_formatter.setFiat = (currency, rate, display = null) => {
+inan_formatter.convert = convert;
+inan_formatter.setDisplay = units.setDisplay;
+inan_formatter.setUnit = units.setUnit;
+inan_formatter.getUnit = units.getUnit;
+inan_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const mojo_to_Inan = (mojo) => {
-  return Inan_formatter(Number.parseInt(mojo), 'mojo').to('Inan').value();
+export const mojo_to_inan = (mojo) => {
+  return inan_formatter(Number.parseInt(mojo), 'mojo').to('inan').value();
 };
 
-export const Inan_to_mojo = (Inan) => {
-  return Inan_formatter(Number.parseFloat(Number(Inan)), 'Inan')
+export const inan_to_mojo = (inan) => {
+  return inan_formatter(Number.parseFloat(Number(inan)), 'inan')
     .to('mojo')
     .value();
 };
 
-export const mojo_to_Inan_string = (mojo) => {
-  return Inan_formatter(Number(mojo), 'mojo').to('Inan').toString();
+export const mojo_to_inan_string = (mojo) => {
+  return inan_formatter(Number(mojo), 'mojo').to('inan').toString();
 };
 
 export const mojo_to_colouredcoin = (mojo) => {
-  return Inan_formatter(Number.parseInt(mojo), 'mojo')
+  return inan_formatter(Number.parseInt(mojo), 'mojo')
     .to('colouredcoin')
     .value();
 };
 
 export const colouredcoin_to_mojo = (colouredcoin) => {
-  return Inan_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
+  return inan_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
     .to('mojo')
     .value();
 };
 
 export const mojo_to_colouredcoin_string = (mojo) => {
-  return Inan_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
+  return inan_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
 };

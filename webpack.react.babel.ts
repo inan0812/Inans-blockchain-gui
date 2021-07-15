@@ -72,8 +72,8 @@ export default {
       'node_modules',
     ],
     alias: {
-      "@Inan/core": `${__dirname}/src/components/core`,
-      "@Inan/icons": `${__dirname}/src/components/icons`,
+      "@inan/core": `${__dirname}/src/components/core`,
+      "@inan/icons": `${__dirname}/src/components/icons`,
       crypto: 'crypto-browserify',
       stream: 'stream-browserify',
     },

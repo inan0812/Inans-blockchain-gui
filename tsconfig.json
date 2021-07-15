@@ -8,7 +8,7 @@
       "esnext"
     ],
     "paths": {
-      "@Inan/*": ["./components/*"]
+      "@inan/*": ["./components/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

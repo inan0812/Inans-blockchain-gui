@@ -9,7 +9,7 @@ import {
   Loading,
   TextField,
   Form,
-} from '@Inan/core';
+} from '@inan/core';
 import {
   Button,
   Dialog,

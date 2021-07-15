@@ -10,8 +10,8 @@ import '../config/env';
 import handleSquirrelEvent from './handleSquirrelEvent';
 import config from '../config/config';
 import dev_config from '../dev_config';
-import InanEnvironment from '../util/InanEnvironment';
-import InanConfig from '../util/config';
+import inanEnvironment from '../util/inanEnvironment';
+import inanConfig from '../util/config';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
@@ -96,7 +96,7 @@ if (!handleSquirrelEvent()) {
 
   const ensureCorrectEnvironment = () => {
     // check that the app is either packaged or running in the python venv
-    if (!InanEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
+    if (!inanEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
       console.log('App must be installed or in venv');
       app.quit();
       return false;
@@ -110,7 +110,7 @@ if (!handleSquirrelEvent()) {
   // if any of these checks return false, don't do any other initialization since the app is quitting
   if (ensureSingleInstance() && ensureCorrectEnvironment()) {
     // this needs to happen early in startup so all processes share the same global config
-    InanConfig.loadConfig('mainnet');
+    inanConfig.loadConfig('mainnet');
     global.sharedObj = { local_test };
 
     const exitPyProc = (e) => {};
@@ -169,7 +169,7 @@ if (!handleSquirrelEvent()) {
       });
 
       // don't show remote daeomn detials in the title bar
-      if (!InanConfig.manageDaemonLifetime()) {
+      if (!inanConfig.manageDaemonLifetime()) {
         mainWindow.webContents.on('did-finish-load', () => {
           mainWindow.setTitle(`${app.getName()} [${global.daemon_rpc_ws}]`);
         });
@@ -180,7 +180,7 @@ if (!handleSquirrelEvent()) {
       // }
       mainWindow.on('close', (e) => {
         // if the daemon isn't local we aren't going to try to start/stop it
-        if (decidedToClose || !InanConfig.manageDaemonLifetime()) {
+        if (decidedToClose || !inanConfig.manageDaemonLifetime()) {
           return;
         }
         e.preventDefault();
@@ -222,8 +222,8 @@ if (!handleSquirrelEvent()) {
       createWindow();
       app.applicationMenu = createMenu();
       // if the daemon isn't local we aren't going to try to start/stop it
-      if (InanConfig.manageDaemonLifetime()) {
-        InanEnvironment.startInanDaemon();
+      if (inanConfig.manageDaemonLifetime()) {
+        inanEnvironment.startinanDaemon();
       }
     };
 
@@ -355,7 +355,7 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'Inan Blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'inan Blockchain Wiki' }),
             click: () => {
               openExternal(
                 'https://github.com/inan0812/Inans-blockchain/wiki',
@@ -400,13 +400,13 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://keybase.io/team/Inan_network.public');
+              openExternal('https://keybase.io/team/inan_network.public');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/Inan_project');
+              openExternal('https://twitter.com/inan_project');
             },
           },
         ],
@@ -414,12 +414,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // Inan Blockchain menu (Mac)
+      // inan Blockchain menu (Mac)
       template.unshift({
-        label: i18n._(/* i18n */ { id: 'Inan' }),
+        label: i18n._(/* i18n */ { id: 'inan' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About Inan Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About inan Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -506,7 +506,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About Inan Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About inan Blockchain' }),
           click() {
             openAbout();
           },

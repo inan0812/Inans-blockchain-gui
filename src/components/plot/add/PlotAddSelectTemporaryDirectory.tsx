@@ -7,7 +7,7 @@ import {
   CardStep,
   Flex,
   TextField,
-} from '@Inan/core';
+} from '@inan/core';
 import { Typography } from '@material-ui/core';
 import useSelectDirectory from '../../../hooks/useSelectDirectory';
 

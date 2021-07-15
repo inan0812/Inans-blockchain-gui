@@ -1,4 +1,4 @@
-export { default as Inan } from './Inan';
+export { default as inan } from './inan';
 export { default as Farm } from './Farm';
 export { default as Home } from './Home';
 export { default as Keys } from './Keys';

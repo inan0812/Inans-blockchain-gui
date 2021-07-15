@@ -9,7 +9,7 @@ import {
   Flex,
   Checkbox,
   TooltipIcon,
-} from '@Inan/core';
+} from '@inan/core';
 import {
   Grid,
   FormControl,

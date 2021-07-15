@@ -1,8 +1,8 @@
 {
   "name": "Inans-blockchain",
-  "author": "Inan Network <hello@Inan.net> (https://Inan.net/)",
-  "description": "GUI for Inan Blockchain",
-  "productName": "Inan Blockchain",
+  "author": "inan Network <hello@inan.net> (https://inan.net/)",
+  "description": "GUI for inan Blockchain",
+  "productName": "inan Blockchain",
   "private": true,
   "homepage": "./",
   "main": "build/electron/main.js",

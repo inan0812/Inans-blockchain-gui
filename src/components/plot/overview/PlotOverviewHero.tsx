@@ -3,8 +3,8 @@ import { Trans } from '@lingui/macro';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Button, Grid, Typography, Divider } from '@material-ui/core';
-import { CardHero, Flex, Link } from '@Inan/core';
-import { PlotHero as PlotHeroIcon } from '@Inan/icons';
+import { CardHero, Flex, Link } from '@inan/core';
+import { PlotHero as PlotHeroIcon } from '@inan/icons';
 import PlotAddDirectoryDialog from '../PlotAddDirectoryDialog';
 import { refreshPlots } from '../../../modules/harvesterMessages';
 import useOpenDialog from '../../../hooks/useOpenDialog';
@@ -34,7 +34,7 @@ export default function PlotOverviewHero() {
           <Typography variant="body1">
             <Trans>
               {
-                'Plots are allocated space on your hard drive used to farm and earn Inan. '
+                'Plots are allocated space on your hard drive used to farm and earn inan. '
               }
               <Link
                 target="_blank"

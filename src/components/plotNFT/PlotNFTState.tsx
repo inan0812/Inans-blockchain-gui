@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, State, StateTypography, TooltipIcon } from '@Inan/core';
+import { Flex, State, StateTypography, TooltipIcon } from '@inan/core';
 import { Typography } from '@material-ui/core';
 import type PlotNFT from '../../types/PlotNFT';
 import PlotNFTStateEnum from '../../constants/PlotNFTState';

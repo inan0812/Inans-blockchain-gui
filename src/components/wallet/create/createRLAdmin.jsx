@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog } from '@Inan/core';
+import { AlertDialog } from '@inan/core';
 import {
   Typography,
   Button,
@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_rl_admin_action } from '../../../modules/message';
-import { Inan_to_mojo } from '../../../util/Inan';
+import { inan_to_mojo } from '../../../util/inan';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -76,7 +76,7 @@ export const CreateRLAdminWallet = () => {
   const custom = customStyles();
   const dispatch = useDispatch();
   let interval_input = null;
-  let Inanper_input = null;
+  let inanper_input = null;
   let userpubkey_input = null;
   let amount_input = null;
   let fee_input = null;
@@ -104,10 +104,10 @@ export const CreateRLAdminWallet = () => {
       return;
     }
     if (
-      Inanper_input.value === '' ||
-      Number(Inanper_input.value) === 0 ||
-      !Number(Inanper_input.value) ||
-      isNaN(Number(Inanper_input.value))
+      inanper_input.value === '' ||
+      Number(inanper_input.value) === 0 ||
+      !Number(inanper_input.value) ||
+      isNaN(Number(inanper_input.value))
     ) {
       dispatch(
         openDialog(
@@ -156,18 +156,18 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const Inanper = Inan_to_mojo(Inanper_input.value);
-    const Inanper_value = Number.parseInt(Number(Inanper));
+    const inanper = inan_to_mojo(inanper_input.value);
+    const inanper_value = Number.parseInt(Number(inanper));
     const userpubkey = userpubkey_input.value;
-    const amount = Inan_to_mojo(amount_input.value);
+    const amount = inan_to_mojo(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = Inan_to_mojo(fee_input.value);
+    // var fee = inan_to_mojo(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(
       create_rl_admin_action(
         interval_value,
-        Inanper_value,
+        inanper_value,
         userpubkey,
         amount_value,
       ),
@@ -225,7 +225,7 @@ export const CreateRLAdminWallet = () => {
               color="secondary"
               fullWidth
               inputRef={(input) => {
-                Inanper_input = input;
+                inanper_input = input;
               }}
               label={<Trans>Spendable Amount</Trans>}
             />

@@ -1,17 +1,17 @@
 const units = {
-  Inan: 1,
+  inan: 1,
   mojo: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  Inan: ['ch', 'Inan', 'Inan'],
+  inan: ['ch', 'inan', 'inan'],
   mojo: ['mj', 'mojo'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  Inan: {
+  inan: {
     format: '{amount} CH',
     fractionDigits: 12,
   },

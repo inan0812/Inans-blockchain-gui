@@ -10,8 +10,8 @@ import {
   Home as HomeIcon,
   Plot as PlotIcon,
   Pool as PoolIcon,
-} from '@Inan/icons';
-import { Flex, SideBarItem } from '@Inan/core';
+} from '@inan/icons';
+import { Flex, SideBarItem } from '@inan/core';
 import { logOut } from '../../modules/message';
 
 const StyledRoot = styled(Flex)`

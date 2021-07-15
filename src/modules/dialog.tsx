@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Action } from 'redux';
 import { ThunkAction } from 'redux-thunk';
-import { AlertDialog } from '@Inan/core';
+import { AlertDialog } from '@inan/core';
 import type { RootState } from './rootReducer';
 import getDescriptiveError from '../util/getDescriptiveError';
 

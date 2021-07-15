@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore Inan’s blocks further? Check out <0>Inan Explorer</0> built by an open source developer."
-msgstr "* Bạn muốn khám phá thêm về Inan Blockchain? Xem <0> Inan Explorer </0> được xây dựng bởi các nhà phát triển nguồn mở."
+msgid "*Want to explore inan’s blocks further? Check out <0>inan Explorer</0> built by an open source developer."
+msgstr "* Bạn muốn khám phá thêm về inan Blockchain? Xem <0> inan Explorer </0> được xây dựng bởi các nhà phát triển nguồn mở."
 
 #: src/components/plot/add/PlotAddNFT.tsx:127
 msgid "+ Add New Plot NFT"
@@ -44,8 +44,8 @@ msgstr "Harvester là một dịch vụ chạy trên một máy chứa các tệ
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
-msgid "About Inan Blockchain"
-msgstr "Về Inan Blockchain"
+msgid "About inan Blockchain"
+msgstr "Về inan Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -216,8 +216,8 @@ msgid "Block VDF Iterations"
 msgstr "Khối VDF lặp lại"
 
 #: src/components/block/Block.jsx:338
-msgid "Block at height {0} in the Inan blockchain"
-msgstr "Khối tại height {0} trong Inan blockchain"
+msgid "Block at height {0} in the inan blockchain"
+msgstr "Khối tại height {0} trong inan blockchain"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -309,16 +309,16 @@ msgid "Chat on KeyBase"
 msgstr "Chat trên Keybase"
 
 #: src/electron/main.tsx:419
-msgid "Inan"
-msgstr "Inan"
+msgid "inan"
+msgstr "inan"
 
 #: src/electron/main.tsx:358
-msgid "Inan Blockchain Wiki"
-msgstr "Inan Blockchain Wiki"
+msgid "inan Blockchain Wiki"
+msgstr "inan Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:647
-msgid "Inan Wallet"
-msgstr "Ví Inan"
+msgid "inan Wallet"
+msgstr "Ví inan"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -686,8 +686,8 @@ msgid "Edit"
 msgstr "Chỉnh sửa"
 
 #: src/components/wallet/WalletImport.tsx:147
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Inan wallet."
-msgstr "Nhập 24 từ ghi nhớ mà bạn đã lưu để khôi phục ví Inan của bạn."
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your inan wallet."
+msgstr "Nhập 24 từ ghi nhớ mà bạn đã lưu để khôi phục ví inan của bạn."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -700,8 +700,8 @@ msgid "Error"
 msgstr "Lỗi"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
-msgid "Error: Cannot send Inan to coloured address. Please enter a Inan address."
-msgstr "Lỗi: Không thể gửi Inan đến địa chỉ coloured. Vui lòng nhập địa chỉ Inan."
+msgid "Error: Cannot send inan to coloured address. Please enter a inan address."
+msgstr "Lỗi: Không thể gửi inan đến địa chỉ coloured. Vui lòng nhập địa chỉ inan."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1468,8 +1468,8 @@ msgid "Plots Passed Filter"
 msgstr "Plot đã lọc"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:28
-msgid "Plots are allocated space on your hard drive used to farm and earn Inan. <0>Learn more</0>"
-msgstr "Plot được phân bổ không gian trên ổ cứng của bạn dùng để farm và thu về Inan. <0> Tìm hiểu thêm </0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn inan. <0>Learn more</0>"
+msgstr "Plot được phân bổ không gian trên ổ cứng của bạn dùng để farm và thu về inan. <0> Tìm hiểu thêm </0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -1905,8 +1905,8 @@ msgstr "Chi tiêu thời gian khoảng (số khối): {thời gian khoảng các
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
-msgid "Spending Limit (Inan per interval): {0}"
-msgstr "Giới hạn Chi tiêu (Inan cho mỗi khoảng thời gian): {0}"
+msgid "Spending Limit (inan per interval): {0}"
+msgstr "Giới hạn Chi tiêu (inan cho mỗi khoảng thời gian): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -1954,8 +1954,8 @@ msgstr "Tình trạng:"
 #~ msgstr "Sub Block Height"
 
 #: src/components/block/Block.jsx:338
-#~ msgid "Sub Block at height {0} in the Inan blockchain"
-#~ msgstr "Sub Block at height {0} in the Inan blockchain"
+#~ msgid "Sub Block at height {0} in the inan blockchain"
+#~ msgstr "Sub Block at height {0} in the inan blockchain"
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:347
 msgid "Submit"
@@ -2094,8 +2094,8 @@ msgid "This feature is available only from the GUI."
 msgstr "Tính năng này chỉ khả dụng trên GUI."
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
-msgid "This is the amount of Inan that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Inan that you have just spent but is not yet in the blockchain."
-msgstr "Đây là số lượng Inan mà bạn hiện có thể sử dụng để thực hiện các giao dịch. Nó không bao gồm phần thưởng farm đang chờ xử lý, các giao dịch đến đang chờ xử lý và Inan mà bạn vừa chi tiêu nhưng chưa có trong blockchain."
+msgid "This is the amount of inan that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and inan that you have just spent but is not yet in the blockchain."
+msgstr "Đây là số lượng inan mà bạn hiện có thể sử dụng để thực hiện các giao dịch. Nó không bao gồm phần thưởng farm đang chờ xử lý, các giao dịch đến đang chờ xử lý và inan mà bạn vừa chi tiêu nhưng chưa có trong blockchain."
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2114,7 +2114,7 @@ msgid "This is the time the block was created by the farmer, which is before it 
 msgstr "Đây là thời gian khối được tạo ra bởi farmer, trước khi nó được hoàn thiện với một bằng chứng về thời gian"
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
-msgid "This is the total amount of Inan in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
+msgid "This is the total amount of inan in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
 msgstr "Đây là tổng lượng XCH trong chuỗi khối ở khối phụ cao nhất hiện tại được kiểm soát bởi các khóa riêng của bạn. Nó bao gồm phần thưởng farm bị đóng băng, nhưng không phải là các giao dịch đến và đi đang chờ xử lý."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
@@ -2160,8 +2160,8 @@ msgid "This trade was included on blockchain at this block height"
 msgstr "Giao dịch này đã được đưa vào blockchain ở chiều cao khối này"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
-msgid "This version of Inan is no longer compatible with the blockchain and can not safely farm."
-msgstr "Phiên bản Inan này không còn tương thích với blockchain và không thể farm một cách an toàn."
+msgid "This version of inan is no longer compatible with the blockchain and can not safely farm."
+msgstr "Phiên bản inan này không còn tương thích với blockchain và không thể farm một cách an toàn."
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2185,8 +2185,8 @@ msgstr "Đến"
 msgid "Total Balance"
 msgstr "Tổng số dư"
 
-#: src/components/farm/card/FarmCardTotalInanFarmed.tsx:15
-#~ msgid "Total Inan Farmed"
+#: src/components/farm/card/FarmCardTotalinanFarmed.tsx:15
+#~ msgid "Total inan Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
@@ -2359,7 +2359,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.InanWallet"
+#~ msgid "WalletItem.inanWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -2396,8 +2396,8 @@ msgid "Want to Join a Pool? Create a Plot NFT"
 msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:133
-msgid "Want to earn more Inan? Add more plots to your farm."
-msgstr "Muốn thêm Inan? Thêm nhiều plot vào farm của bạn."
+msgid "Want to earn more inan? Add more plots to your farm."
+msgstr "Muốn thêm inan? Thêm nhiều plot vào farm của bạn."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2412,8 +2412,8 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Trọng lượng là tổng độ khó cộng thêm của tất cả các khối phụ lên đến và bao gồm khối này"
 
 #: src/components/selectKey/SelectKey.tsx:112
-msgid "Welcome to Inan. Please log in with an existing key, or create a new key."
-msgstr "Chào mừng đến với Inan. Vui lòng đăng nhập bằng khóa hiện có hoặc tạo khóa mới."
+msgid "Welcome to inan. Please log in with an existing key, or create a new key."
+msgstr "Chào mừng đến với inan. Vui lòng đăng nhập bằng khóa hiện có hoặc tạo khóa mới."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2483,8 +2483,8 @@ msgid "You need to claim your rewards first"
 msgstr ""
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Inan application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Inan application as this version will stop working soon!"
+#~ msgid "You need to upgrade the inan application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the inan application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:37
 msgid "You need {currencyCode} to join a pool."
@@ -2571,9 +2571,9 @@ msgstr ""
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} phần thưởng khối"
 
-#: src/components/farm/card/FarmCardTotalInanFarmed.tsx:29
-msgid "{currencyCode} Total Inan Farmed"
-msgstr "{currencyCode} Tổng số Inan thu được"
+#: src/components/farm/card/FarmCardTotalinanFarmed.tsx:29
+msgid "{currencyCode} Total inan Farmed"
+msgstr "{currencyCode} Tổng số inan thu được"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

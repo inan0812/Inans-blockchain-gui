@@ -2,8 +2,8 @@ const units = require('../../util/units');
 
 describe('units', () => {
   describe('#getUnit', () => {
-    it('gets unit of Inan', () => {
-      const result = units.getUnit('Inan');
+    it('gets unit of inan', () => {
+      const result = units.getUnit('inan');
 
       expect(result).toBe(1);
     });
@@ -22,7 +22,7 @@ describe('units', () => {
 
       expect(result).toBe(1);
     });
-    it('gets unit of Inan using alias', () => {
+    it('gets unit of inan using alias', () => {
       const result = units.getUnit('ch');
 
       expect(result).toBe(1);
@@ -46,8 +46,8 @@ describe('units', () => {
     });
   });
   describe('#getDisplay', () => {
-    it('gets display of Inan', () => {
-      const result = units.getDisplay('Inan');
+    it('gets display of inan', () => {
+      const result = units.getDisplay('inan');
 
       expect(result).toEqual({
         format: '{amount} CH',
@@ -87,13 +87,13 @@ describe('units', () => {
       expect(result).toEqual(1);
     });
     it('modifies an existing unit', () => {
-      units.setUnit('Inan', 9);
+      units.setUnit('inan', 9);
 
-      const result = units.getUnit('Inan');
+      const result = units.getUnit('inan');
 
       expect(result).toEqual(9);
 
-      units.setUnit('Inan', 1);
+      units.setUnit('inan', 1);
     });
   });
   describe('#setDisplay', () => {
@@ -111,12 +111,12 @@ describe('units', () => {
       });
     });
     it('updates an existing display', () => {
-      units.setDisplay('Inan', {
+      units.setDisplay('inan', {
         format: '{amount} TXCH',
         fractionDigits: 0,
       });
 
-      const result = units.getDisplay('Inan');
+      const result = units.getDisplay('inan');
 
       expect(result).toEqual({
         format: '{amount} TXCH',

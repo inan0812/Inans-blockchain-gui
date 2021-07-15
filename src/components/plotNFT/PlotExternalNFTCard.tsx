@@ -11,7 +11,7 @@ import {
   Loading,
   FormatLargeNumber,
   Link,
-} from '@Inan/core';
+} from '@inan/core';
 import {
   Box,
   Card,

@@ -11,13 +11,13 @@ import {
   Box,
   Typography,
 } from '@material-ui/core';
-import { Card, Flex } from '@Inan/core';
+import { Card, Flex } from '@inan/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Grid from '@material-ui/core/Grid';
 import HelpIcon from '@material-ui/icons/Help';
 import { unix_to_short_date } from '../../util/utils';
 import { presetOverview, presentTrade } from '../../modules/trade';
-import { mojo_to_Inan_string } from '../../util/Inan';
+import { mojo_to_inan_string } from '../../util/inan';
 import {
   get_all_trades,
   cancel_trade_with_spend_action,
@@ -301,7 +301,7 @@ const OfferRow = (props) => {
       </Box>
       <Box flexGrow={1}>{side}</Box>
       <Box flexGrow={1} style={{ textAlign: 'right' }}>
-        {mojo_to_Inan_string(amount)}
+        {mojo_to_inan_string(amount)}
       </Box>
     </Box>
   );

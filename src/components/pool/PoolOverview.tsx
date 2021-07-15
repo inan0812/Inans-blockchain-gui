@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useToggle } from 'react-use';
-import { Flex, UnitFormat, More, Table } from '@Inan/core';
+import { Flex, UnitFormat, More, Table } from '@inan/core';
 import { useHistory } from 'react-router';
 import {
   ViewList as ViewListIcon,
@@ -31,7 +31,7 @@ import PlotNFTStateEnum from '../../constants/PlotNFTState';
 import PlotNFTUnconfirmedCard from '../plotNFT/PlotNFTUnconfirmedCard';
 import PlotNFTState from '../plotNFT/PlotNFTState';
 import useUnconfirmedPlotNFTs from '../../hooks/useUnconfirmedPlotNFTs';
-import { mojo_to_Inan } from '../../util/Inan';
+import { mojo_to_inan } from '../../util/inan';
 import WalletStatus from '../wallet/WalletStatus';
 
 const groupsCols = [
@@ -54,7 +54,7 @@ const groupsCols = [
       if (state === PlotNFTStateEnum.SELF_POOLING) {
         return (
           <UnitFormat
-            value={mojo_to_Inan(
+            value={mojo_to_inan(
               BigInt(nft.wallet_balance.confirmed_wallet_balance ?? 0),
             )}
           />

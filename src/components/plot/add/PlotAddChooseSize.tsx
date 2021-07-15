@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { useFormContext } from 'react-hook-form';
-import { CardStep, ConfirmDialog, Link, Select, StateColor } from '@Inan/core';
+import { CardStep, ConfirmDialog, Link, Select, StateColor } from '@inan/core';
 import {
   Grid,
   FormControl,

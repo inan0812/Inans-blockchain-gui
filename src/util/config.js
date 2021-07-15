@@ -16,7 +16,7 @@ function loadConfig(net) {
     const config_root_dir =
       'INAN_ROOT' in process.env
         ? process.env.INAN_ROOT
-        : path.join(os.homedir(), '.Inan', net);
+        : path.join(os.homedir(), '.inan', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );

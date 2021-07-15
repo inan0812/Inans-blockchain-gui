@@ -3,10 +3,10 @@ import { Trans } from '@lingui/macro';
 import { useSelector } from 'react-redux';
 import type { RootState } from '../../../modules/rootReducer';
 import FarmCard from './FarmCard';
-import { mojo_to_Inan } from '../../../util/Inan';
+import { mojo_to_inan } from '../../../util/inan';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
-export default function FarmCardTotalInanFarmed() {
+export default function FarmCardTotalinanFarmed() {
   const currencyCode = useCurrencyCode();
 
   const loading = useSelector(
@@ -17,17 +17,17 @@ export default function FarmCardTotalInanFarmed() {
     (state: RootState) => state.wallet_state.farmed_amount?.farmed_amount,
   );
 
-  const totalInanFarmed = useMemo(() => {
+  const totalinanFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       const val = BigInt(farmedAmount.toString());
-      return mojo_to_Inan(val);
+      return mojo_to_inan(val);
     }
   }, [farmedAmount]);
 
   return (
     <FarmCard
-      title={<Trans>{currencyCode} Total Inan Farmed</Trans>}
-      value={totalInanFarmed}
+      title={<Trans>{currencyCode} Total inan Farmed</Trans>}
+      value={totalinanFarmed}
       loading={loading}
     />
   );

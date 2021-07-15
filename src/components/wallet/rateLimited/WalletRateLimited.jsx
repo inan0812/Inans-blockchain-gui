@@ -13,12 +13,12 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Tooltip } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
-import { AlertDialog, Card, Flex } from '@Inan/core';
+import { AlertDialog, Card, Flex } from '@inan/core';
 import {
   send_transaction,
   rl_set_user_info_action,
 } from '../../../modules/message';
-import { mojo_to_Inan_string, Inan_to_mojo } from '../../../util/Inan';
+import { mojo_to_inan_string, inan_to_mojo } from '../../../util/inan';
 import { get_transaction_result } from '../../../util/transaction_result';
 import { openDialog } from '../../../modules/dialog';
 import WalletHistory from '../WalletHistory';
@@ -251,17 +251,17 @@ const IncompleteCard = (props) => {
     const ip_debuf = ip_unhex.toString('utf8');
     const ip_parsed = JSON.parse(ip_debuf);
     const interval_input = ip_parsed.interval;
-    const Inanper_input = ip_parsed.limit;
+    const inanper_input = ip_parsed.limit;
     const origin_input = ip_parsed.origin_string;
     const admin_pubkey_input = ip_parsed.admin_pubkey;
     const interval_value = Number.parseInt(Number(interval_input));
-    const Inanper_value = Number.parseInt(Number(Inanper_input));
+    const inanper_value = Number.parseInt(Number(inanper_input));
     const origin_parsed = JSON.parse(origin_input);
     dispatch(
       rl_set_user_info_action(
         id,
         interval_value,
-        Inanper_value,
+        inanper_value,
         origin_parsed,
         admin_pubkey_input,
       ),
@@ -399,8 +399,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (Inan per interval):{' '}
-                  {mojo_to_Inan_string(limit)}
+                  Spending Limit (inan per interval):{' '}
+                  {mojo_to_inan_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -446,8 +446,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (Inan per interval):{' '}
-                  {mojo_to_Inan_string(limit)}
+                  Spending Limit (inan per interval):{' '}
+                  {mojo_to_inan_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -512,7 +512,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_Inan_string(props.balance)} {currencyCode}
+            {mojo_to_inan_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -652,8 +652,8 @@ const SendCard = (props) => {
       );
       return;
     }
-    const amount = Inan_to_mojo(amount_input.value);
-    const fee = Inan_to_mojo(fee_input.value);
+    const amount = inan_to_mojo(amount_input.value);
+    const fee = inan_to_mojo(fee_input.value);
 
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);

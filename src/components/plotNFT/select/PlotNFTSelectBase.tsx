@@ -12,7 +12,7 @@ import {
   RadioGroup,
   Fee,
   TextField,
-} from '@Inan/core';
+} from '@inan/core';
 import {
   Grid,
   FormControl,

@@ -19,7 +19,7 @@ import {
   Loading,
   TooltipIcon,
   Flex,
-} from '@Inan/core';
+} from '@inan/core';
 import {
   unix_to_short_date,
   hex_to_array,
@@ -27,7 +27,7 @@ import {
   sha256,
 } from '../../util/utils';
 import { getBlockRecord, getBlock } from '../../modules/fullnodeMessages';
-import { mojo_to_Inan } from '../../util/Inan';
+import { mojo_to_inan } from '../../util/inan';
 import {
   calculatePoolReward,
   calculateBaseFarmerReward,
@@ -171,13 +171,13 @@ export default function Block() {
       ? blockRecord.weight - prevBlockRecord.weight
       : blockRecord?.weight ?? 0;
 
-  const poolReward = mojo_to_Inan(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = mojo_to_Inan(
+  const poolReward = mojo_to_inan(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = mojo_to_inan(
     calculateBaseFarmerReward(blockRecord.height),
   );
 
-  const InanFees = blockRecord.fees
-    ? mojo_to_Inan(BigInt(blockRecord.fees))
+  const inanFees = blockRecord.fees
+    ? mojo_to_inan(BigInt(blockRecord.fees))
     : '';
 
   const rows = [
@@ -268,7 +268,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.Inanexplorer.com/blockchain/puzzlehash/${blockRecord.farmer_puzzle_hash}`}
+          href={`https://www.inanexplorer.com/blockchain/puzzlehash/${blockRecord.farmer_puzzle_hash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -284,7 +284,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.Inanexplorer.com/blockchain/puzzlehash/${blockRecord.pool_puzzle_hash}`}
+          href={`https://www.inanexplorer.com/blockchain/puzzlehash/${blockRecord.pool_puzzle_hash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -319,7 +319,7 @@ export default function Block() {
     },
     {
       name: <Trans>Fees Amount</Trans>,
-      value: InanFees ? `${InanFees} ${currencyCode}` : '',
+      value: inanFees ? `${inanFees} ${currencyCode}` : '',
       tooltip: (
         <Trans>
           The total transactions fees in this block. Rewarded to the farmer.
@@ -334,7 +334,7 @@ export default function Block() {
         title={
           <BlockTitle>
             <Trans>
-              Block at height {blockRecord.height} in the Inan blockchain
+              Block at height {blockRecord.height} in the inan blockchain
             </Trans>
           </BlockTitle>
         }

@@ -5,13 +5,13 @@ import {
   Amount,
   Fee,
   Form,
-  TextField as InanTextField,
+  TextField as inanTextField,
   AlertDialog,
   CopyToClipboard,
   Flex,
   Card,
   ConfirmDialog,
-} from '@Inan/core';
+} from '@inan/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import isNumeric from 'validator/es/lib/isNumeric';
@@ -42,7 +42,7 @@ import {
   send_transaction,
   farm_block,
 } from '../../../modules/message';
-import { /* mojo_to_Inan_string, */ Inan_to_mojo } from '../../../util/Inan';
+import { /* mojo_to_inan_string, */ inan_to_mojo } from '../../../util/inan';
 import { openDialog } from '../../../modules/dialog';
 import { get_transaction_result } from '../../../util/transaction_result';
 import config from '../../../config/config';
@@ -238,7 +238,7 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_Inan_string(props.balance)} {currencyCode}
+            {mojo_to_inan_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -273,7 +273,7 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance}
         tooltip={
           <Trans>
-            This is the total amount of Inan in the blockchain at the current
+            This is the total amount of inan in the blockchain at the current
             peak sub block that is controlled by your private keys. It includes
             frozen farming rewards, but not pending incoming and outgoing
             transactions.
@@ -285,9 +285,9 @@ function BalanceCard(props: BalanceCardProps) {
         balance={balance_spendable}
         tooltip={
           <Trans>
-            This is the amount of Inan that you can currently use to make
+            This is the amount of inan that you can currently use to make
             transactions. It does not include pending farming rewards, pending
-            incoming transactions, and Inan that you have just spent but is not
+            incoming transactions, and inan that you have just spent but is not
             yet in the blockchain.
           </Trans>
         }
@@ -454,7 +454,7 @@ function SendCard(props: SendCardProps) {
         openDialog(
           <AlertDialog>
             <Trans>
-              Error: Cannot send Inan to coloured address. Please enter a Inan
+              Error: Cannot send inan to coloured address. Please enter a inan
               address.
             </Trans>
           </AlertDialog>,
@@ -463,15 +463,15 @@ function SendCard(props: SendCardProps) {
       return;
     }
 
-    if (address.slice(0, 12) === 'Inan_addr://') {
+    if (address.slice(0, 12) === 'inan_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);
     }
 
-    const amountValue = Number.parseFloat(Inan_to_mojo(amount));
-    const feeValue = Number.parseFloat(Inan_to_mojo(fee));
+    const amountValue = Number.parseFloat(inan_to_mojo(amount));
+    const feeValue = Number.parseFloat(inan_to_mojo(fee));
 
     dispatch(send_transaction(wallet_id, amountValue, feeValue, address));
 
@@ -494,7 +494,7 @@ function SendCard(props: SendCardProps) {
       <Form methods={methods} onSubmit={handleSubmit}>
         <Grid spacing={2} container>
           <Grid xs={12} item>
-            <InanTextField
+            <inanTextField
               name="address"
               variant="filled"
               color="secondary"
@@ -644,7 +644,7 @@ export default function StandardWallet(props: StandardWalletProps) {
       <Flex gap={1} alignItems="center">
         <Flex flexGrow={1}>
           <Typography variant="h5" gutterBottom>
-            <Trans>Inan Wallet</Trans>
+            <Trans>inan Wallet</Trans>
           </Typography>
         </Flex>
         <More>

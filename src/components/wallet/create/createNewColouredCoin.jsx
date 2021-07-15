@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog } from '@Inan/core';
+import { AlertDialog } from '@inan/core';
 import {
   Typography,
   Button,
@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_cc_action } from '../../../modules/message';
-import { Inan_to_mojo } from '../../../util/Inan';
+import { inan_to_mojo } from '../../../util/inan';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -83,8 +83,8 @@ export const CreateNewCCWallet = () => {
       return;
     }
     dispatch(createState(true, true));
-    const amount = Inan_to_mojo(amount_input.value);
-    const fee = Inan_to_mojo(fee_input.value);
+    const amount = inan_to_mojo(amount_input.value);
+    const fee = inan_to_mojo(fee_input.value);
     dispatch(create_cc_action(amount, fee));
   }
 
