@@ -1,44 +1,28 @@
 import Big from 'big.js';
 
-const MOJO_PER_INAN = Big(1000000000000);
-const BLOCKS_PER_YEAR = 1681920;
+const MOJO_PER_INAN = Big(100000000);
+const BLOCKS_PER_YEAR = 3363840;
 
 export function calculatePoolReward(height: number): Big {
-  if (height === 0) {
-    return MOJO_PER_INAN.times(21000000).times(7 / 8);
-  }
-  if (height < 3 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(2).times(7 / 8);
-  }
-  if (height < 6 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(1).times(7 / 8);
-  }
-  if (height < 9 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(0.5).times(7 / 8);
-  }
-  if (height < 12 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(0.25).times(7 / 8);
-  }
-
-  return MOJO_PER_INAN.times(0.125).times(7 / 8);
+  return 0;
 }
 
 export function calculateBaseFarmerReward(height: number): Big {
   if (height === 0) {
-    return MOJO_PER_INAN.times(21000000).times(1 / 8);
+    return MOJO_PER_INAN.times(100000000);
   }
   if (height < 3 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(2).times(1 / 8);
+    return MOJO_PER_INAN.times(2);
   }
   if (height < 6 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(1).times(1 / 8);
+    return MOJO_PER_INAN.times(2);
   }
   if (height < 9 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(0.5).times(1 / 8);
+    return MOJO_PER_INAN.times(2);
   }
   if (height < 12 * BLOCKS_PER_YEAR) {
-    return MOJO_PER_INAN.times(0.25).times(1 / 8);
+    return MOJO_PER_INAN.times(2);
   }
 
-  return MOJO_PER_INAN.times(0.125).times(1 / 8);
+  return MOJO_PER_INAN.times(2);
 }
