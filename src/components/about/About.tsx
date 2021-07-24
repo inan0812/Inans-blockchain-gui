@@ -114,7 +114,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 Chia Network, inan Network</div>
+        <div className="copyright">Copyright (c) 2021 Chia Network, Inan Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (

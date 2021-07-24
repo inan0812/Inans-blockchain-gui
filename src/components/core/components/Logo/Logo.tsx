@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Box, BoxProps } from '@material-ui/core';
-import { inan } from '@inan/icons';
+import { Inan } from '@inan/icons';
 
-const Styledinan = styled(inan)`
+const Styledinan = styled(Inan)`
   max-width: 100%;
   width: auto;
   height: auto;
