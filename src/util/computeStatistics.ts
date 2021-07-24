@@ -55,13 +55,12 @@ export default function computeStatistics(wallets: Wallet[]): {
     });
   });
 
-  const totalinanFarmed = poolCoins.plus(farmerCoins);
-  const totalBlockRewards = Big(poolCoins).times(8).div(7);
+  const totalinanFarmed = Big(farmerCoins);
+  const totalBlockRewards = Big(farmerCoins);
   const userTransactionFees = Big(farmerCoins).minus(
-    Big(totalBlockRewards).div(8),
+    Big(totalBlockRewards),
   );
-  const blockRewards = Big(poolCoins)
-    .plus(farmerCoins)
+  const blockRewards = Big(farmerCoins)
     .minus(userTransactionFees);
 
   return {
