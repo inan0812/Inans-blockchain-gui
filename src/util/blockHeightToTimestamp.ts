@@ -1,6 +1,6 @@
 import type Peak from '../types/Peak';
 
-const BLOCK_DURATION_SECONDS = (24 * 60 * 60) / 4608;
+const BLOCK_DURATION_SECONDS = (24 * 60 * 60) / 18432;
 
 export default function blockHeightToTimestamp(
   height: number,
