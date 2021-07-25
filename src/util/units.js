@@ -1,6 +1,6 @@
 const units = {
   inan: 1,
-  mojo: 1 / 1e8,
+  mojo: 1 / 1e12,
   colouredcoin: 1 / 1e5,
 };
 
@@ -21,7 +21,7 @@ const display = {
   },
   colouredcoin: {
     format: '{amount} CC',
-    fractionDigits: 3,
+    fractionDigits: 5,
   },
 };
 

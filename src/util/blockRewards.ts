@@ -1,10 +1,10 @@
 import Big from 'big.js';
 
-const MOJO_PER_INAN = Big(100000000);
+const MOJO_PER_INAN = Big(1000000000000);
 const BLOCKS_PER_YEAR = 6721840;
 
 export function calculatePoolReward(height: number): Big {
-  return 0;
+  return MOJO_PER_INAN.times(3);
 }
 
 export function calculateBaseFarmerReward(height: number): Big {
